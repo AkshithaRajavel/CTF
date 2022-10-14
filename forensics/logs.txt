@@ -1,0 +1,594 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20221002162812
+Configuration Name: 
+Machine: DESKTOP-9EOATHS (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4116
+PSVersion: 5.1.19041.1237
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1237
+BuildVersion: 10.0.19041.1237
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20221002162812
+**********************
+FLARE
+10/2/2022 4:28:30 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 20221002162845
+**********************
+PS>mkdir ctf
+
+
+    Directory: C:\Windows\system32
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         10/2/2022   4:28 PM                ctf
+
+
+FLARE
+10/2/2022 4:28:46 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 20221002162932
+**********************
+PS>echo "efxagkninfnzpqti" > key.txt
+>> ParameterBinding(Out-File): name="InputObject"; value="efxagkninfnzpqti"
+FLARE
+10/2/2022 4:29:32 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 20221002163029
+**********************
+PS>echo "JCgndWJlcmN0ZnsnKygiTExVVSIpLlRvbG93ZXIoKS5SZXBsYWNlKCdsbCcsJzdsJykuUmVwbGFjZSgndXUnLCd1eXUnKSsoJ2FzZHdlczhoY2ZmJykuU3Vic3RyaW5nKCc2JywnNScpKyd9Jyk=" > flag.txt
+>> ParameterBinding(Out-File): name="InputObject"; value="JCgndWJlcmN0ZnsnKygiTExVVSIpLlRvbG93ZXIoKS5SZXBsYWNlKCdsbCcsJzdsJykuUmVwbGFjZSgndXUnLCd1eXUnKSsoJ2FzZHdlczhoY2ZmJykuU3Vic3RyaW5nKCc2JywnNScpKyd9Jyk="
+FLARE
+10/2/2022 4:30:29 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 20221002163035
+**********************
+PS>dir
+
+
+    Directory: C:\Windows\system32
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         12/7/2019   3:19 PM                0409
+d-----         10/6/2021   7:28 PM                AdvancedInstallers
+d-----         12/7/2019   2:44 PM                am-et
+d-----         12/7/2019   2:44 PM                AppLocker
+d-----         10/6/2021   7:28 PM                appraiser
+d-----         8/19/2022  10:46 PM                ar-SA
+d-----         8/19/2022  10:46 PM                bg-BG
+d-----         10/6/2021   7:28 PM                Boot
+d-----         12/7/2019   2:44 PM                Bthprops
+d-----         7/25/2022  10:24 PM                CatRoot
+d-----         8/20/2022   8:25 PM                catroot2
+d-----         10/6/2021   7:28 PM                CodeIntegrity
+d-----         10/6/2021   7:28 PM                Com
+d-----          9/2/2022   6:52 PM                config
+d---s-         12/7/2019   3:01 PM                Configuration
+d-----         12/7/2019   2:44 PM                ContainerSettingsProviders
+d-----         8/19/2022  10:46 PM                cs-CZ
+d-----         10/2/2022   4:28 PM                ctf
+d-----         8/19/2022  10:46 PM                da-DK
+d-----         10/6/2021   7:28 PM                DDFs
+d-----         8/19/2022  10:46 PM                de-DE
+d---s-         10/6/2021   7:28 PM                DiagSvcs
+d-----         10/6/2021   7:28 PM                Dism
+d-----         12/7/2019   2:44 PM                downlevel
+d-----         8/20/2022   7:24 PM                drivers
+d-----         12/7/2019   2:44 PM                DriverState
+d-----         8/20/2022  12:08 AM                DriverStore
+d-----         7/25/2022  10:24 PM                DRVSTORE
+d---s-         12/7/2019   3:19 PM                dsc
+d-----         8/19/2022  10:46 PM                el-GR
+d-----         12/7/2019   3:19 PM                en
+d-----         8/19/2022  10:46 PM                en-GB
+d-----         8/20/2022  12:11 AM                en-US
+d-----         8/19/2022  10:46 PM                es-ES
+d-----         8/19/2022  10:46 PM                es-MX
+d-----         8/19/2022  10:46 PM                et-EE
+d---s-         10/6/2021   7:28 PM                F12
+d-----         12/7/2019   2:44 PM                ff-Adlm-SN
+d-----         8/19/2022  10:46 PM                fi-FI
+d-----         8/19/2022  10:46 PM                fr-CA
+d-----         8/19/2022  10:46 PM                fr-FR
+d-----         7/26/2022  10:16 AM                FxsTmp
+d-----         12/7/2019   2:44 PM                GroupPolicyUsers
+d-----         8/19/2022  10:46 PM                he-IL
+d-----         8/19/2022  10:46 PM                hr-HR
+d-----         8/19/2022  10:46 PM                hu-HU
+d-----         12/7/2019   3:22 PM                Hydrogen
+d-----         12/7/2019   2:44 PM                ias
+d-----         12/7/2019   2:44 PM                icsxml
+d-----         12/7/2019   2:44 PM                IME
+d-----         12/7/2019   2:44 PM                inetsrv
+d-----         12/7/2019   2:44 PM                InputMethod
+d-----         12/7/2019   2:44 PM                Ipmi
+d-----         8/19/2022  10:46 PM                it-IT
+d-----         8/19/2022  10:46 PM                ja-jp
+d-----         10/6/2021   7:28 PM                Keywords
+d-----         8/19/2022  10:46 PM                ko-KR
+d-----         12/7/2019   2:44 PM                Licenses
+d-----         8/20/2022   8:21 PM                LogFiles
+d-----         8/19/2022  10:46 PM                lt-LT
+d-----         8/19/2022  10:46 PM                lv-LV
+d-----         12/7/2019   3:21 PM                MailContactsCalendarSync
+d---s-         7/26/2022  10:11 AM                Microsoft
+d-----         10/6/2021   7:28 PM                migration
+d-----         10/6/2021   7:28 PM                migwiz
+d-----         12/7/2019   2:44 PM                MSDRM
+d-----         12/7/2019   2:44 PM                MsDtc
+d-----         12/7/2019   3:19 PM                MUI
+d-----         12/7/2019   2:44 PM                my-mm
+d-----         8/19/2022  10:46 PM                nb-NO
+d-----         12/7/2019   2:44 PM                NDF
+d-----         12/7/2019   2:44 PM                networklist
+d-----         8/19/2022  10:46 PM                nl-NL
+d-----         8/20/2022  12:07 AM                Npcap
+d---s-         12/7/2019   2:44 PM                Nui
+d-----         10/6/2021   7:28 PM                oobe
+d-----         10/6/2021   7:28 PM                OpenSSH
+d-----         12/7/2019   2:44 PM                osa-Osge-001
+d-----         10/6/2021   7:28 PM                PerceptionSimulation
+d-----         8/19/2022  10:46 PM                pl-PL
+d-----         12/7/2019   3:01 PM                PointOfService
+d-----         12/7/2019   3:19 PM                Printing_Admin_Scripts
+d-----         12/7/2019   2:44 PM                ProximityToast
+d-----         8/19/2022  10:46 PM                pt-BR
+d-----         8/19/2022  10:46 PM                pt-PT
+d-----         12/7/2019   3:01 PM                ras
+d-----         12/7/2019   2:44 PM                RasToast
+d-----         7/26/2022  10:13 AM                Recovery
+d-----         12/7/2019   2:44 PM                restore
+d-----         8/19/2022  10:46 PM                ro-RO
+d-----         8/19/2022  10:46 PM                ru-RU
+d-----         12/7/2019   2:44 PM                SecureBootUpdates
+d-----         10/6/2021   7:28 PM                setup
+d-----         12/7/2019   2:44 PM                Sgrm
+d-----         10/6/2021   7:28 PM                ShellExperiences
+d-----         12/7/2019   2:44 PM                si-lk
+d-----         8/19/2022  10:46 PM                sk-SK
+d-----         8/19/2022  10:46 PM                sl-SI
+d-----         10/2/2022   4:27 PM                SleepStudy
+d-----         12/7/2019   3:19 PM                slmgr
+d-----         12/7/2019   3:01 PM                SMI
+d-----         12/7/2019   2:44 PM                Speech
+d-----         12/7/2019   3:01 PM                Speech_OneCore
+d-----         7/26/2022  10:16 AM                spool
+d-----         12/7/2019   3:01 PM                spp
+d-----         12/7/2019   2:44 PM                sppui
+d-----         8/19/2022  10:46 PM                sr-Latn-RS
+d-----         9/18/2022  12:20 PM                sru
+d-----         8/19/2022  10:46 PM                sv-SE
+d-----         10/6/2021   7:28 PM                Sysprep
+d-----         10/6/2021   7:28 PM                SystemResetPlatform
+d-----         12/7/2019   2:44 PM                ta-in
+d-----         12/7/2019   2:44 PM                ta-lk
+d-----         8/19/2022  10:47 PM                Tasks
+d-----         8/19/2022  10:46 PM                th-TH
+d-----         12/7/2019   2:44 PM                ti-et
+d-----         8/19/2022  10:46 PM                tr-TR
+d-----         8/19/2022  10:46 PM                uk-UA
+d---s-         10/6/2021   7:28 PM                UNP
+d-----         7/26/2022  10:18 AM                wbem
+d-----         12/7/2019   3:19 PM                WCN
+d-----         9/18/2022  11:56 AM                WDI
+d-----         7/26/2022  10:15 AM                WinBioDatabase
+d-----         10/6/2021   7:28 PM                WinBioPlugIns
+d-----         12/7/2019   2:44 PM                WindowsPowerShell
+d-----         12/7/2019   3:01 PM                winevt
+d-----         10/6/2021   7:28 PM                WinMetadata
+d-----         12/7/2019   3:19 PM                winrm
+d-----         8/19/2022  10:46 PM                zh-CN
+d-----         8/19/2022  10:46 PM                zh-TW
+-a----         12/7/2019   2:38 PM          12088 69fe178f-26e7-43a9-aa7d-2b616b672dde_eventlogservice.dll
+-a----         10/6/2021   7:22 PM          12080 6bea57fb-8dfb-4177-9ae8-42e8b3529933_RuntimeDeviceInstall.dll
+-a----         12/7/2019   2:39 PM           3176 @AdvancedKeySettingsNotification.png
+-a----         12/7/2019   2:38 PM            232 @AppHelpToast.png
+-a----         12/7/2019   2:38 PM            308 @AudioToastIcon.png
+-a----         12/7/2019   2:38 PM            450 @BackgroundAccessToastIcon.png
+-a----         12/7/2019   2:38 PM            199 @bitlockertoastimage.png
+-a----         12/7/2019   2:38 PM          14791 @edptoastimage.png
+-a----         12/7/2019   2:38 PM            330 @EnrollmentToastIcon.png
+-a----         12/7/2019   2:38 PM            563 @language_notification_icon.png
+-a----         12/7/2019   2:39 PM            483 @optionalfeatures.png
+-a----         12/7/2019   2:39 PM            354 @StorageSenseToastIcon.png
+-a----         12/7/2019   2:39 PM            404 @VpnToastIcon.png
+-a----         12/7/2019   2:39 PM         195443 @windows-hello-V4.1.gif
+-a----         12/7/2019   2:39 PM            714 @WindowsHelloFaceToastIcon.png
+-a----         12/7/2019   2:38 PM            518 @WindowsUpdateToastIcon.contrast-black.png
+-a----         12/7/2019   2:38 PM            810 @WindowsUpdateToastIcon.contrast-white.png
+-a----         12/7/2019   2:38 PM            518 @WindowsUpdateToastIcon.png
+-a----         12/7/2019   2:38 PM            691 @WirelessDisplayToast.png
+-a----         12/7/2019   2:39 PM            402 @WLOGO_48x48.png
+-a----         10/6/2021   7:21 PM         466432 aadauthhelper.dll
+-a----         10/6/2021   7:21 PM        1012736 aadcloudap.dll
+-a----         10/6/2021   7:21 PM         102400 aadjcsp.dll
+-a----         10/6/2021   7:21 PM        1427456 aadtb.dll
+-a----         10/6/2021   7:21 PM         177968 aadWamExtension.dll
+-a----         10/6/2021   7:21 PM         465408 AarSvc.dll
+-a----         10/6/2021   7:22 PM         441168 AboutSettingsHandlers.dll
+-a----         10/6/2021   7:22 PM         419328 AboveLockAppHost.dll
+-a----         10/6/2021   7:21 PM         281088 accessibilitycpl.dll
+-a----         10/6/2021   7:23 PM         274432 accountaccessor.dll
+-a----         10/6/2021   7:23 PM         435712 AccountsRt.dll
+-a----         10/6/2021   7:22 PM         370176 AcGenral.dll
+-a----         10/6/2021   7:22 PM         326144 AcLayers.dll
+-a----         12/7/2019   2:39 PM          11264 acledit.dll
+-a----         12/7/2019   2:39 PM         587264 aclui.dll
+-a----         10/6/2021   7:21 PM         479544 acmigration.dll
+-a----         10/6/2021   7:21 PM         195584 ACPBackgroundManagerPolicy.dll
+-a----         10/6/2021   7:21 PM          88576 acppage.dll
+-a----         12/7/2019   2:39 PM          13312 acproxy.dll
+-a----         10/6/2021   7:22 PM          81408 AcSpecfc.dll
+-a----         10/6/2021   7:22 PM         322048 ActionCenter.dll
+-a----         10/6/2021   7:22 PM         166400 ActionCenterCPL.dll
+-a----         12/7/2019   2:39 PM         189752 ActionQueue.dll
+-a----         10/6/2021   7:21 PM          56320 ActivationClient.dll
+-a----         10/6/2021   7:21 PM         797696 ActivationManager.dll
+-a----         10/6/2021   7:21 PM         274432 activeds.dll
+-a----         10/6/2021   7:21 PM         112128 activeds.tlb
+-a----         12/7/2019   2:38 PM           8321 ActiveHours.png
+-a----         10/6/2021   7:23 PM         103424 ActiveSyncCsp.dll
+-a----         10/6/2021   7:23 PM        1707520 ActiveSyncProvider.dll
+-a----         10/6/2021   7:22 PM         637952 actxprxy.dll
+-a----         10/6/2021   7:22 PM          68608 AcWinRT.dll
+-a----         10/6/2021   7:22 PM          15872 AcXtrnal.dll
+-a----         10/6/2021   7:21 PM          53248 AdaptiveCards.dll
+-a----         12/7/2019   2:38 PM          67584 AddressParser.dll
+-a----         12/7/2019   2:39 PM          24576 adhapi.dll
+-a----         10/6/2021   7:22 PM         100352 adhsvc.dll
+-a----         10/6/2021   7:22 PM          60416 adprovider.dll
+-a----         10/6/2021   7:22 PM         306176 adsldp.dll
+-a----         10/6/2021   7:21 PM         258560 adsldpc.dll
+-a----         12/7/2019   2:39 PM         104960 adsmsext.dll
+-a----         12/7/2019   2:39 PM         364032 adsnt.dll
+-a----         10/6/2021   7:21 PM         863232 adtschema.dll
+-a----         10/6/2021   7:21 PM         168448 AdvancedEmojiDS.dll
+-a----         10/6/2021   7:21 PM         689552 advapi32.dll
+-a----         12/7/2019   2:38 PM           2560 advapi32res.dll
+-a----         12/7/2019   2:38 PM         151552 advpack.dll
+-a----         12/7/2019   2:38 PM          30720 aeevts.dll
+-a----         10/6/2021   7:21 PM         852280 aeinv.dll
+-a----         10/6/2021   7:21 PM         598344 aepic.dll
+-a----         10/6/2021   7:21 PM         916480 agentactivationruntime.dll
+-a----         10/6/2021   7:21 PM          13312 agentactivationruntimestarter.exe
+-a----         10/6/2021   7:21 PM         886272 agentactivationruntimewindows.dll
+-a----         10/6/2021   7:21 PM        3232056 aitstatic.exe
+-a----         12/7/2019   2:38 PM          26112 AJRouter.dll
+-a----         10/6/2021   7:21 PM          95744 alg.exe
+-a----         12/7/2019   2:39 PM         162816 altspace.dll
+-a----         12/7/2019   1:25 AM          18944 amcompat.tlb
+-a----         10/6/2021   7:21 PM          77824 amsi.dll
+-a----         10/6/2021   7:21 PM          14848 amsiproxy.dll
+-a----         10/6/2021   7:22 PM         100864 amstream.dll
+-a----         10/6/2021   7:23 PM         219648 Analog.Shell.Broker.dll
+-a----         12/7/2019   2:39 PM          31232 AnalogCommonProxyStub.dll
+-a----         10/6/2021   7:22 PM         256512 apds.dll
+-a----         10/6/2021   7:23 PM          72192 APHostClient.dll
+-a----         12/6/2019  10:05 PM          16384 APHostRes.dll
+-a----         10/6/2021   7:23 PM         351744 APHostService.dll
+-a----         10/6/2021   7:21 PM         248832 apisampling.dll
+-a----         10/6/2021   7:21 PM          91136 ApiSetHost.AppExecutionAlias.dll
+-a----         12/7/2019   2:38 PM         128312 apisetschema.dll
+-a----         10/6/2021   7:22 PM        1487360 APMon.dll
+-a----         10/6/2021   7:21 PM         913712 AppContracts.dll
+-a----         10/6/2021   7:21 PM         208896 AppExtension.dll
+-a----         10/6/2021   7:21 PM         570880 apphelp.dll
+-a----         10/6/2021   7:21 PM          34816 Apphlpdm.dll
+-a----         10/6/2021   7:21 PM         120320 AppHostRegistrationVerifier.exe
+-a----         10/6/2021   7:21 PM          69744 appidapi.dll
+-a----         10/6/2021   7:21 PM          57344 appidcertstorecheck.exe
+-a----         10/6/2021   7:21 PM         160768 appidpolicyconverter.exe
+-a----         10/6/2021   7:21 PM          85504 appidsvc.dll
+-a----         10/6/2021   7:21 PM          25600 appidtel.exe
+-a----         10/6/2021   7:21 PM         220160 appinfo.dll
+-a----         10/6/2021   7:22 PM          12288 appinfoext.dll
+-a----         10/6/2021   7:21 PM          49664 AppInstallerPrompt.Desktop.dll
+-a----         12/7/2019   2:38 PM         124416 ApplicationControlCSP.dll
+-a----         10/6/2021   7:21 PM         668672 ApplicationFrame.dll
+-a----         10/6/2021   7:21 PM          78456 ApplicationFrameHost.exe
+-a----         10/6/2021   7:21 PM         390144 AppLockerCSP.dll
+-a----         10/6/2021   7:21 PM        1223576 ApplyTrustOffline.exe
+-a----         12/7/2019   2:39 PM         114688 AppMon.dll
+-a----         10/6/2021   7:21 PM         147456 AppointmentActivation.dll
+-a----         10/6/2021   7:21 PM         795136 AppointmentApis.dll
+-a----         10/6/2021   7:21 PM        2007368 appraiser.dll
+-a----         10/6/2021   7:23 PM         651776 AppReadiness.dll
+-a----         12/7/2019   2:38 PM          12800 apprepapi.dll
+-a----         10/6/2021   7:21 PM         582088 AppResolver.dll
+-a----         10/6/2021   7:21 PM         235008 ApproveChildRequest.exe
+-a----         12/7/2019   2:38 PM         198144 appsruprov.dll
+-a----          9/5/2018   8:47 PM         652647 appverif.chm
+-a----        10/23/2018  11:13 AM         148392 appverif.exe
+-a----        10/23/2018   2:10 AM         144424 appverifUI.dll
+-a----         10/6/2021   7:22 PM         595968 appwiz.cpl
+-a----         10/6/2021   7:21 PM         384824 AppxAllUserStore.dll
+-a----         10/6/2021   7:21 PM         210944 AppXApplicabilityBlob.dll
+-a----         10/6/2021   7:21 PM         239432 AppxApplicabilityEngine.dll
+-a----         10/6/2021   7:21 PM        1018488 AppXDeploymentClient.dll
+-a----         10/6/2021   7:21 PM        1780736 AppXDeploymentExtensions.desktop.dll
+-a----         10/6/2021   7:21 PM        2466816 AppXDeploymentExtensions.onecore.dll
+-a----         10/6/2021   7:21 PM        3918336 AppXDeploymentServer.dll
+-a----         10/6/2021   7:21 PM        1829192 AppxPackaging.dll
+-a----         12/7/2019   2:38 PM           3232 AppxProvisioning.xml
+-a----         10/6/2021   7:21 PM         274944 AppxSip.dll
+-a----         12/7/2019   2:38 PM          23040 AppxStreamingDataSourcePS.dll
+-a----         10/6/2021   7:21 PM         138240 AppxSysprep.dll
+-a----         12/7/2019   2:39 PM         628736 archiveint.dll
+-a----         12/7/2019   2:39 PM          26624 ARP.EXE
+-a----         12/7/2019   2:40 PM           2560 asferror.dll
+-a----         12/7/2019   2:40 PM          33552 aspnet_counters.dll
+-a----         10/6/2021   7:21 PM          59904 AssignedAccessRuntime.dll
+-a----         12/7/2019   2:39 PM          89600 asycfilt.dll
+-a----         12/7/2019   2:39 PM          31232 at.exe
+-a----         10/6/2021   7:21 PM          92672 AtBroker.exe
+-a----         10/6/2021   7:21 PM          99840 atl.dll
+-a----         6/11/2011   1:15 AM         158536 atl100.dll
+-a----          6/9/2013   3:59 PM         192584 atl110.dll
+-a----         10/6/2021   7:21 PM          40960 atlthunk.dll
+-a----         10/6/2021   7:22 PM          48640 atmlib.dll
+-a----         12/7/2019   2:39 PM          23040 attrib.exe
+-a----         10/6/2021   7:21 PM         585216 audiodg.exe
+-a----         10/6/2021   7:21 PM         751616 AudioEndpointBuilder.dll
+-a----         10/6/2021   7:21 PM        2107840 AudioEng.dll
+-a----         10/6/2021   7:22 PM         369152 AudioHandlers.dll
+-a----         10/6/2021   7:21 PM         420448 AUDIOKSE.dll
+-a----         10/6/2021   7:21 PM          56320 audioresourceregistrar.dll
+-a----         10/6/2021   7:21 PM        1566608 AudioSes.dll
+-a----         10/6/2021   7:21 PM        1843712 audiosrv.dll
+-a----         10/6/2021   7:21 PM         348080 AudioSrvPolicyManager.dll
+-a----         12/7/2019   2:39 PM         208384 auditcse.dll
+-a----         10/6/2021   7:22 PM          41984 auditpol.exe
+-a----         10/6/2021   7:22 PM          80384 auditpolcore.dll
+-a----         10/6/2021   7:21 PM         216576 AuthBroker.dll
+-a----         10/6/2021   7:21 PM         112640 AuthBrokerUI.dll
+-a----         10/6/2021   7:22 PM          54272 authentication.dll
+-a----         10/6/2021   7:22 PM          51712 AuthExt.dll
+-a----         10/6/2021   7:22 PM         561152 authfwcfg.dll
+-a----         12/7/2019   2:38 PM          33280 AuthFWGP.dll
+-a----         12/7/2019   2:38 PM        5107712 AuthFWSnapin.dll
+-a----         12/7/2019   2:38 PM         112640 AuthFWWizFwk.dll
+-a----         10/6/2021   7:21 PM         139960 AuthHost.exe
+-a----         12/7/2019   2:38 PM          19456 AuthHostProxy.dll
+-a----         10/6/2021   7:21 PM         281600 authui.dll
+-a----         10/6/2021   7:21 PM         292864 authz.dll
+-a----         10/6/2021   7:21 PM         972800 autochk.exe
+-a----         10/6/2021   7:22 PM         947200 autoconv.exe
+-a----         10/6/2021   7:22 PM         921088 autofmt.exe
+-a----         10/6/2021   7:21 PM          80384 autopilot.dll
+-a----         10/6/2021   7:21 PM          25600 autopilotdiag.dll
+-a----         10/6/2021   7:22 PM         206336 autoplay.dll
+-a----         10/6/2021   7:22 PM         114176 autotimesvc.dll
+-a----         12/7/2019   2:38 PM         138092 AverageRoom.bin
+-a----         12/7/2019   2:39 PM          84480 avicap32.dll
+-a----         12/7/2019   2:39 PM         118784 avifil32.dll
+-a----         10/6/2021   7:21 PM          30480 avrt.dll
+-a----         10/6/2021   7:22 PM         116736 AxInstSv.dll
+-a----         10/6/2021   7:22 PM          60928 AxInstUI.exe
+-a----         12/7/2019   2:39 PM          41587 azman.msc
+-a----         10/6/2021   7:22 PM         634880 azroles.dll
+-a----         10/6/2021   7:22 PM         447488 azroleui.dll
+-a----         12/7/2019   2:39 PM          32256 AzSqlExt.dll
+-a----         10/6/2021   7:22 PM        1951744 AzureSettingSyncProvider.dll
+-a----         10/6/2021   7:21 PM          71680 BackgroundMediaPolicy.dll
+-a----         10/6/2021   7:21 PM          19776 backgroundTaskHost.exe
+-a----         10/6/2021   7:21 PM          37376 BackgroundTransferHost.exe
+-a----         12/7/2019   2:38 PM          15872 BamSettingsClient.dll
+-a----         10/6/2021   7:21 PM          92160 BarcodeProvisioningPlugin.dll
+-a----         12/7/2019   2:39 PM         210232 basecsp.dll
+-a----         12/7/2019   2:38 PM          71680 basesrv.dll
+-a----         12/7/2019   2:38 PM          41472 batmeter.dll
+-a----         12/7/2019   2:38 PM         261632 bcastdvr.proxy.dll
+-a----         10/6/2021   7:21 PM         111616 BcastDVRBroker.dll
+-a----         10/6/2021   7:21 PM         492544 BcastDVRClient.dll
+-a----         10/6/2021   7:21 PM         244736 BcastDVRCommon.dll
+-a----         10/6/2021   7:22 PM        1384448 bcastdvruserservice.dll
+-a----         10/6/2021   7:21 PM         130144 bcd.dll
+-a----         10/6/2021   7:21 PM         248320 bcdboot.exe
+-a----         10/6/2021   7:21 PM         490808 bcdedit.exe
+-a----         12/7/2019   2:38 PM          79872 bcdprov.dll
+-a----         12/7/2019   2:38 PM          87552 bcdsrv.dll
+-a----         10/6/2021   7:21 PM         365688 BCP47Langs.dll
+-a----         10/6/2021   7:21 PM         175616 BCP47mrm.dll
+-a----         10/6/2021   7:21 PM         146248 bcrypt.dll
+-a----         10/6/2021   7:21 PM         529968 bcryptprimitives.dll
+-a----         12/7/2019   2:39 PM         100864 bdaplgin.ax
+-a----         12/7/2019   3:22 PM         105984 BdeHdCfgLib.dll
+-a----         12/7/2019   3:22 PM          50688 bderepair.dll
+-a----         10/6/2021   7:23 PM         555008 bdesvc.dll
+-a----         10/6/2021   7:23 PM          35840 bdeui.dll
+-a----         10/6/2021   7:23 PM          55808 BdeUISrv.exe
+-a----         10/6/2021   7:23 PM         286656 bdeunlock.exe
+-a----         10/6/2021   7:21 PM         887296 BFE.DLL
+-a----         12/7/2019   2:38 PM          30720 bi.dll
+-a----         10/6/2021   7:21 PM          67072 bidispl.dll
+-a----         10/6/2021   7:21 PM         103936 bindfltapi.dll
+-a----         10/6/2021   7:22 PM         358400 BingASDS.dll
+-a----         10/6/2021   7:22 PM          99328 BingFilterDS.dll
+-a----         10/6/2021   7:21 PM        9037312 BingMaps.dll
+-a----         12/7/2019   2:38 PM         706560 BingOnlineServices.dll
+-a----         10/6/2021   7:21 PM         382464 BioCredProv.dll
+-a----         10/6/2021   7:22 PM         745424 BioIso.exe
+-a----         10/6/2021   7:21 PM         858112 bisrv.dll
+-a----         10/6/2021   7:22 PM         270336 BitLockerCsp.dll
+-a----         10/6/2021   7:23 PM         151040 BitLockerDeviceEncryption.exe
+-a----         10/6/2021   7:23 PM         102400 BitLockerWizardElev.exe
+-a----         12/7/2019   2:38 PM         211456 bitsadmin.exe
+-a----         12/7/2019   2:38 PM          78336 bitsigd.dll
+-a----         12/7/2019   2:38 PM          31744 bitsperf.dll
+-a----         12/7/2019   2:38 PM          67584 BitsProxy.dll
+-a----         10/6/2021   7:21 PM         346608 biwinrt.dll
+-a----         12/7/2019   2:40 PM          77824 BlbEvents.dll
+-a----         12/7/2019   2:40 PM           2560 blbres.dll
+-a----         12/7/2019   2:40 PM          66560 blb_ps.dll
+-a----         10/6/2021   7:21 PM         202240 BluetoothApis.dll
+-a----         10/6/2021   7:22 PM          67072 BluetoothDesktopHandlers.dll
+-a----         12/7/2019   2:38 PM           8495 BluetoothPairingSystemToastIcon.contrast-black.png
+-a----         12/7/2019   2:38 PM           8736 BluetoothPairingSystemToastIcon.contrast-high.png
+-a----         12/7/2019   2:38 PM           8495 BluetoothPairingSystemToastIcon.contrast-white.png
+-a----         12/7/2019   2:38 PM           8541 BluetoothPairingSystemToastIcon.png
+-a----         12/7/2019   2:38 PM           1320 BluetoothSystemToastIcon.contrast-white.png
+-a----         12/7/2019   2:38 PM           1229 BluetoothSystemToastIcon.png
+-a----         10/6/2021   7:21 PM          26112 bnmanager.dll
+-a----         12/7/2019   2:38 PM        3170304 boot.sdi
+-a----         12/7/2019   2:38 PM          97280 bootcfg.exe
+-a----         10/6/2021   7:23 PM          26624 bootim.exe
+-a----         10/6/2021   7:21 PM         357888 BootMenuUX.dll
+-a----         12/7/2019   2:38 PM         110392 bootsect.exe
+-a----         12/7/2019   2:38 PM          11576 bootstr.dll
+-a----         10/6/2021   7:23 PM        3993088 bootux.dll
+-a----         12/7/2019   2:38 PM          25912 BOOTVID.DLL
+-a----         12/7/2019   2:39 PM          22984 bopomofo.uce
+-a----         12/7/2019   2:39 PM           2560 bridgeres.dll
+-a----         12/7/2019   2:39 PM          20992 bridgeunattend.exe
+-a----         10/6/2021   7:21 PM         289792 BrokerLib.dll
+-a----         12/7/2019   2:38 PM          58880 browcli.dll
+-a----         12/7/2019   3:22 PM         140800 browser.dll
+-a----         10/6/2021   7:21 PM         286544 browserbroker.dll
+-a----         12/7/2019   2:38 PM         140800 browserexport.exe
+-a----         10/6/2021   7:21 PM         149504 BrowserSettingSync.dll
+-a----         12/7/2019   2:38 PM          47928 browser_broker.exe
+-a----         12/7/2019   2:39 PM          14848 browseui.dll
+-a----         10/6/2021   7:21 PM        1023488 BTAGService.dll
+-a----         10/6/2021   7:21 PM         399872 BthAvctpSvc.dll
+-a----         10/6/2021   7:21 PM         343040 BthAvrcp.dll
+-a----         10/6/2021   7:21 PM          63488 BthAvrcpAppSvc.dll
+-a----         12/7/2019   2:38 PM         118272 bthci.dll
+-a----         12/7/2019   2:39 PM          34304 BthMtpContextHandler.dll
+-a----         12/7/2019   2:38 PM          31744 bthpanapi.dll
+-a----         10/6/2021   7:21 PM         190976 BthpanContextHandler.dll
+-a----         10/6/2021   7:21 PM         266752 bthprops.cpl
+-a----         10/6/2021   7:21 PM         107520 BthRadioMedia.dll
+-a----         12/7/2019   2:38 PM         213504 bthserv.dll
+-a----         12/7/2019   2:38 PM          30208 BthTelemetry.dll
+-a----         12/7/2019   2:38 PM          40448 bthudtask.exe
+-a----         10/6/2021   7:21 PM         125952 btpanui.dll
+-a----         12/7/2019   2:39 PM         809472 Bubbles.scr
+-a----         10/6/2021   7:22 PM          67072 BWContextHandler.dll
+-a----         10/6/2021   7:21 PM          90624 ByteCodeGenerator.exe
+-a----         12/7/2019   2:38 PM         104448 cabapi.dll
+-a----         10/6/2021   7:21 PM         147232 cabinet.dll
+-a----         12/7/2019   2:38 PM         169984 cabview.dll
+-a----         12/7/2019   2:39 PM          34304 cacls.exe
+-a----         12/7/2019   2:39 PM          27648 calc.exe
+-a----         10/6/2021   7:21 PM          89600 CallButtons.dll
+-a----         12/7/2019   2:38 PM          28160 CallButtons.ProxyStub.dll
+-a----         10/6/2021   7:21 PM         176128 CallHistoryClient.dll
+-a----         10/6/2021   7:21 PM         131584 CameraCaptureUI.dll
+-a----         10/6/2021   7:23 PM          32528 CameraSettingsUIHost.exe
+-a----         10/6/2021   7:21 PM          97792 CapabilityAccessHandlers.dll
+-a----         10/6/2021   7:21 PM         391168 CapabilityAccessManager.dll
+-a----         10/6/2021   7:21 PM         242688 CapabilityAccessManagerClient.dll
+-a----         10/6/2021   7:21 PM         318736 capauthz.dll
+-a----         10/6/2021   7:22 PM          64000 capiprovider.dll
+-a----         12/7/2019   2:38 PM          26624 capisp.dll
+-a----         10/6/2021   7:21 PM         130560 CaptureService.dll
+-a----         10/6/2021   7:23 PM          91136 CastingShellExt.dll
+-a----         10/6/2021   7:22 PM          96768 CastLaunch.dll
+-a----         10/6/2021   7:22 PM          62504 CastSrv.exe
+-a----         10/6/2021   7:21 PM         478720 catsrv.dll
+-a----         12/7/2019   2:38 PM          48128 catsrvps.dll
+-a----         10/6/2021   7:21 PM         522240 catsrvut.dll
+-a----         10/6/2021   7:22 PM        1024000 CBDHSvc.dll
+-a----         12/7/2019   2:39 PM          92672 cca.dll
+-a----         10/6/2021   7:21 PM         267264 cdd.dll
+-a----         10/6/2021   7:22 PM        1080832 cdosys.dll
+-a----         10/6/2021   7:23 PM        4824576 cdp.dll
+-a----         10/6/2021   7:21 PM        1765376 cdprt.dll
+-a----         10/6/2021   7:21 PM         611328 cdpsvc.dll
+-a----         10/6/2021   7:21 PM         490496 cdpusersvc.dll
+-a----         12/7/2019   2:39 PM         747520 CellularAPI.dll
+-a----         10/6/2021   7:21 PM          45568 cellulardatacapabilityhandler.dll
+-a----         10/6/2021   7:21 PM         256000 cemapi.dll
+-a----         12/7/2019   2:38 PM          34816 cero.rs
+-a----         10/6/2021   7:21 PM         819200 certca.dll
+-a----         10/6/2021   7:21 PM         494592 certcli.dll
+-a----         12/7/2019   2:38 PM          48128 certCredProvider.dll
+-a----         10/6/2021   7:22 PM          68096 certenc.dll
+-a----         10/6/2021   7:21 PM        3311104 CertEnroll.dll
+-a----         10/6/2021   7:21 PM          66048 CertEnrollCtrl.exe
+-a----         12/7/2019   2:39 PM         354816 CertEnrollUI.dll
+-a----         12/7/2019   2:39 PM          63081 certlm.msc
+-a----         10/6/2021   7:22 PM        2237440 certmgr.dll
+-a----         12/7/2019   2:39 PM          63070 certmgr.msc
+-a----         10/6/2021   7:22 PM          71168 CertPKICmdlet.dll
+-a----         10/6/2021   7:21 PM         168960 CertPolEng.dll
+-a----         10/6/2021   7:22 PM         196608 certprop.dll
+-a----         10/6/2021   7:22 PM         564224 certreq.exe
+-a----         12/7/2019   2:39 PM        1651200 certutil.exe
+-a----         10/6/2021   7:23 PM         271872 cewmdm.dll
+-a----         10/6/2021   7:21 PM          81408 cfgbkend.dll
+-a----         10/6/2021   7:21 PM         305264 cfgmgr32.dll
+-a----         10/6/2021   7:22 PM         168448 CfgSPCellular.dll
+-a----         10/6/2021   7:21 PM         138240 CfgSPPolicy.dll
+-a----         10/6/2021   7:21 PM         166912 cflapi.dll
+-a----         10/6/2021   7:22 PM          41800 cfmifs.dll
+-a----         12/7/2019   2:39 PM          14848 cfmifsproxy.dll
+-a----         10/6/2021   7:22 PM        7776768 Chakra.dll
+-a----         10/6/2021   7:22 PM         158720 Chakradiag.dll
+-a----         10/6/2021   7:22 PM         140288 Chakrathunk.dll
+-a----         12/7/2019   2:39 PM         102728 changepk.exe
+-a----         12/7/2019   2:39 PM         198656 charmap.exe
+-a----         12/7/2019   2:38 PM         131072 chartv.dll
+-a----         10/6/2021   7:21 PM         791552 ChatApis.dll
+-a----         12/7/2019   2:39 PM          14848 chcp.com
+-a----         10/6/2021   7:22 PM          30208 CheckNetIsolation.exe
+-a----         12/7/2019   2:38 PM          26624 chkdsk.exe
+-a----         12/7/2019   2:38 PM          23040 chkntfs.exe
+-a----         12/7/2019   2:39 PM          26624 chkwudrv.dll
+-a----         12/7/2019   2:39 PM          35840 choice.exe
+-a----         10/6/2021   7:21 PM         460800 ChsStrokeDS.dll
+-a----         12/7/2019   2:38 PM         167640 chs_singlechar_pinyin.dat
+-a----         10/6/2021   7:21 PM         107520 ChtAdvancedDS.dll
+-a----         10/6/2021   7:21 PM         463872 ChtBopomofoDS.dll
+-a----         10/6/2021   7:21 PM         469504 ChtCangjieDS.dll
+-a----         10/6/2021   7:21 PM         460800 ChtHkStrokeDS.dll
+-a----         10/6/2021   7:21 PM         458752 ChtQuickDS.dll
+-a----         10/6/2021   7:21 PM         542208 ChxAPDS.dll
+-a----         10/6/2021   7:21 PM         380416 ChxDecoder.dll
+-a----         10/6/2021   7:21 PM         515072 ChxHAPDS.dll
+-a----         10/6/2021   7:21 PM         366080 chxinputrouter.dll
+-a----         10/6/2021   7:21 PM         122880 chxranker.dll
+-a----         12/7/2019   2:39 PM          13312 CHxReadingStringIME.dll
+-a----         10/6/2021   7:21 PM         917896 ci.dll
+-a----         10/6/2021   7:22 PM         209920 cic.dll
+-a----         10/6/2021   7:22 PM          34816 CIDiag.exe
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+FLARE
+10/2/2022 4:30:38 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 20221002163109
+**********************
+PS>rm flag.txt
+FLARE
+10/2/2022 4:31:09 PM
+PS C:\Windows\system32 >
+
+**********************
+Command start time: 202210021631
+**********************
+PS>rm key.txt
+FLARE
+10/2/2022 4:31:17 PM
+PS C:\Windows\system32 >
