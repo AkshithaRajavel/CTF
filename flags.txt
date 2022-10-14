@@ -1,0 +1,19 @@
+u30ih4vlzn - shift_it -  
+bipb9p3ac2 - xor
+bapibvfzqh - shift_it_2
+rmuoxeqmnm - xor_2
+v0vesflpmv - assembly
+p849y88zp9 - binary
+fx4bxta34n - malware
+m83138qp9x - zip_it
+3ghd3bkirf - PDF
+ciu2256le2 - malware_2
+do50xxdulj - encoded
+qjhp84txvm - encoded_2
+congrats   - hashed
+bravo      - round&round_we_go
+33iwpxia30 - database
+7luyu8hcff - logs
+of0fmdllfa - overflow_1
+39trmxhjb2 - overflow_2
+y3skm4ixu4 - netcap

@@ -1,0 +1,99 @@
+                                              BINARY EXPLOITATION
+OVERFLOW_1 - 200
+C style strings are always vulnerable!
+
+OVERFLOW_2 - 300
+Do u know how the stack works ?
+
+                                             CRYPTOGRAPHY
+
+ENCODED -100
+Not encrypted....Just encoded
+FLAG : 756265726374667b646f3530787864756c6a7d
+
+ENCODED_2 -100
+can u recognize the format ??
+It's really popular...
+FLAG : dWJlcmN0ZntxamhwODR0eHZtfQ==
+
+HASHED - 100
+Hash functions are not reversible. 
+Really??
+FLAG : uberctf{9330d0adaa891f9cb38f3692eef9a190c1b0ebe4f45f877b68366c808356bd9c}
+
+ROUND&ROUND_WE_GO - 200
+It's finite .... Trust me 
+ 
+                                             FORENSICS
+
+DATABASE - 300
+
+U might have to solve the logs challenge to get this one done !!
+
+LOGS - 200
+
+OOPS! We deleted the flag by mistake....
+But we found  command line logs. Can u find the flag with that ?
+
+NETCAP - 100
+
+There is a server distributing the flag...Can u find it ?
+
+                     REVERSE ENGINEERING
+
+ASSEMBLY - 200
+
+Not familiar with assembly?
+No problem .... You don't really need that.
+
+SHIFT_IT - 100
+
+Not exactly a crypto challenge !
+
+Can u decrypt the flag reversing the source code of what encrypted it ???
+
+encrypted flag : "f{j61=/:r!(9)jkk861"
+
+SHIFT IT 2 - 300
+
+Good with disassembling ?? Then it should be easy to crack !!
+
+XOR - 100
+
+Know how xor works ? 
+U can crack this on any OS !! 
+encrypted flag : '8b1707171117121d190b19125b49435202514f'
+
+XOR 2 - 300
+
+Found the encrypted flag ?? Then u need not randomly guess !
+
+
+                   STEGANOGRAPHY
+
+BINARY -100
+
+Not a reverse engineering challenge ....
+Don't think too much !
+
+MALWARE -100
+
+Not malicious... It just has the flag hidden
+
+MALWARE 2 -200
+
+Again !!! 
+Not malicious... It just has the flag embedded in it 
+passphrase : 'ubertech'
+
+
+PDF - 100
+
+The best place to hide is in plain sight
+
+ZIP IT - 200
+
+Infinitely archieved ??
+How deep can u go
+
+password : ubertech

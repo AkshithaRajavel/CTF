@@ -1,0 +1,238 @@
+                                  BINARY EXPLOITATION
+
+OVERFLOW 1
+
+python3 -c "print('a'*303)" | ./overflow_1
+
+The 'buff' array size is 300 
+read function can take in 400 characters
+The 'flag' array starts 4 bytes away from 'buff'
+Therefore if the input is 303 characters(+'\n'),both character arrays will be joined and the flag will be printed along with 'buff'.
+
+FLAG : uberctf{of0fmdllfa}
+
+OVERFLOW 2
+
+echo "aaadcba" | ./overflow_2
+
+The conditional statement checks whether the integer 'data' is equal to 1633837924 and then prints the flag 
+'buff' size is 3,but read can take in 10 characters
+'data' is placed immediately after 'buff' in stack .
+Therefore from the 4 th character ,the input gets stored in the integer variable data.
+int size - 4 bytes
+1633837924 - 0x61626364
+0x61-a
+0x62-b
+0x63-c
+0x64-d
+
+FLAG : uberctf{39trmxhjb2}
+
+
+
+
+
+
+
+                                    CRYPTOGRAPHY
+
+ENCODED
+
+encoded_flag = "" #encoded text in file goes here
+decoded_flag = ""
+for i in range(0,len(encoded_flag),2):
+    decoded_flag+= chr(int("0x"+encoded_flag[i:i+2],16))
+print(decoded_flag)
+
+#FLAG : "uberctf{do50xxdulj}"
+
+
+
+
+ENCODED 2
+
+The flag is base64 encoded
+
+FLAG : uberctf{qjhp84txvm}
+
+
+
+
+HASHED
+
+The flag is sha256 hashed .
+
+FLAG: uberctf{congrats}
+
+
+
+
+
+ROUND&ROUND WE GO
+
+FLAG : uberctf{bravo}
+md5hash - bravo
+AES : uberctf{fd9ab41e47a9ef4f6477a8a000bf404f}
+base64 : 2AF6PLXsHdwPQm4yRU4ti8adAtTcxV8Dar3jm+nePIK3I5DG2PuheaNTa7Zz0z9B-ECB-128-edsarbtuhmdeeumb
+hex : MkFGNlBMWHNIZHdQUW00eVJVNHRpOGFkQXRUY3hWOERhcjNqbStuZVBJSzNJNURHMlB1aGVhTlRhN1p6MHo5Qi1FQ0ItMTI4LWVkc2FyYnR1aG1kZWV1bWI=
+oct :4d6b46474e6c424d57484e495a4864515557303065564a564e4852704f47466b51585255593368574f455268636a4e71625374755a56424a537a4e4a4e5552484d6c423161475668546c52684e3170364d486f3551693146513049744d5449344c57566b63324679596e52316147316b5a5756316257493d
+shift: 064144066142064066064067064145066143064062064144065067064070064145064071065141064070066064065061065065065067063060063060066065065066064141065066064145064070065062067060064146064067064066066142065061065070065062065065065071063063066070065067064146064065065062066070066063066141064145067061066062065063067064067065065141065066064062064141065063067141064145064141064145065065065062064070064144066143064062063061066061064067065066066070065064066143065062066070064145063061067060063066064144064070066146063065065061066071063061064066065061063060064071067064064144065064064071063064064143065067065066066142066063063062064066067071065071066145065062063061066061064067063061066142065141065067065066063061066062065067064071063144
+
+
+
+
+
+                             FORENSICS
+DATABASE
+
+The .db can be opened with any  db viewer.
+It has one table : flags
+2 columns : username , password
+Table has 6 entries
+password for username 'Raven' is the AES encryption of the flag
+encrypted flag : Aj4jyMw4JJtrY2SqGBoCRXvgGYpHZQt+OY2EqmJB7F4=
+In logs challenge the 128 bit key is echoed into key.txt
+key : efxagkninfnzpqti
+
+FLAG : uberctf{33iwpxia30}
+
+
+
+
+LOGS
+
+The powershell script that generates the flag is base64 encoded and stored in flag.txt
+
+base64 : JCgndWJlcmN0ZnsnKygiTExVVSIpLlRvbG93ZXIoKS5SZXBsYWNlKCdsbCcsJzdsJykuUmVwbGFjZSgndXUnLCd1eXUnKSsoJ2FzZHdlczhoY2ZmJykuU3Vic3RyaW5nKCc2JywnNScpKyd9Jyk=
+script : $('uberctf{'+("LLUU").Tolower().Replace('ll','7l').Replace('uu','uyu')+('asdwes8hcff').Substring('6','5')+'}')
+FLAG : uberctf{7luyu8hcff}
+
+
+
+
+NETCAP
+
+SOURCE : 192.168.1.9
+DESTINATION : 192.168.1.14
+PROTOCOL : HTTP
+
+Flag is hidden in plain text inside html code
+
+FLAG : uberctf{y3skm4ixu4}
+
+
+
+
+                                        
+                                  REVERSE ENGINEERING
+
+ASSEMBLY
+
+Simple assembly program that stores the flag in a buffer character by character in jumbled index order.
+FLAG : uberctf{v0vesflpmv}
+
+
+
+
+SHIFT_IT
+
+import string
+enc_flag = #the encrypted flag in question goes here
+flag=""
+new_alphabet = list(string.ascii_lowercase + string.digits + string.punctuation)
+
+#flag format starts with 'u'
+mystery_num = (new_alphabet.index(enc_flag[0])-new_alphabet.index('u'))%len(new_alphabet)
+
+for char in enc_flag:
+    index = new_alphabet.index(char)
+    flag+= new_alphabet[(index-mystery_num)%len(new_alphabet)]
+    mystery_num+=10
+print(flag)
+
+#FLAG : uberctf{u30ih4vlzn}
+
+
+
+
+SHIFT_IT_2
+
+Use a disassembler/decompiler eg : gdb,ghidra,IDA freeware
+In main function follow the arithmetic operations performed on the key
+
+KEY : 16
+FLAG : uberctf{bapibvfzqh}
+
+
+
+
+XOR
+
+hex_out= '8b1707171117121d190b19125b49435202514f' #encrypted flag in question
+key= int(hex_out[:2],16)^ord('u') #first character of flag format is 'u'
+for i in range(0,len(hex_out),2):
+    a = int(hex_out[i:i+2],16)
+    c= a^key
+    print(chr(c),end="")
+    key=c
+
+#FLAG : uberctf{bipb9p3ac2}
+
+
+
+
+
+XOR_2
+
+Use disassembler/decompiler eg : gdb,ghidra,IDA freeware
+find the encrypted flag in the .data section or the stack
+find the key stored in the stack
+xor ASCII vlue of each character of encrypted flag with the key to find the flag
+
+ENCRYPTED FLAG : "MZ]J[L^CJUMW@]IUVUE"
+KEY : 56
+FLAG : "uberctf{rmuoxeqmnm}"
+
+                                       STEGANOGRAPHY
+
+BINARY
+
+The flag is stored in .data section of the exe file.
+Use tools like string to extract all strings and search for the flag.
+FLAG : "uberctf{p849y88zp9}"
+
+MALWARE
+Flag is in the comment section of the jpg 
+FLAG : uberctf{fx4bxta34n}
+
+MALWARE_2
+A text file containing the flag is embedded in the jpg.
+Use steghide or similar tool to extract the text file
+FLAG: uberctf{ciu2256le2}
+
+PDF
+enc_flag =".***.*.*.**...*..**..*.*.***..*..**...**.***.*...**..**..****.**..**..**.**..***.**.*....**..*....**..**.**...*..**.*.**.**.*..*.***..*..**..**..*****.*"
+flag=""
+for i in range(0,len(enc_flag),8):
+    a=enc_flag[i:i+8]
+    a=a.replace('.','0')
+    a=a.replace('*','1')
+    flag+=chr(int(a,2))
+print(flag)
+FLAG : uberctf{3ghd3bkirf}
+
+ZIP_IT
+flag is in 5 th layer
+password_1 = "ubertech" - in description
+password_2 ="3morelayerstogo" - ascii equivalent in dec
+password_3 = "nowjust2" - hex encoded
+password_4 = "just1:-)" - oct encoded
+password_5 = "finally!" - bin encoded
+FLAG : uberctf{m83138qp9x}
+
+
+
+
+
+
+
