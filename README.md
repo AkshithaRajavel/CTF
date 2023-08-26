@@ -1,2 +1,2 @@
 # Capture The Flag
-Custom CTF challenges with walkthroughs and flags.
+Custom CTF challenges under 5 different catagories with walkthroughs and flags.
