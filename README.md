@@ -1,2 +1,2 @@
-# CTF
-Custom CTF challenges with answers
+# Capture The Flag
+Custom CTF challenges with walkthroughs and flags.
